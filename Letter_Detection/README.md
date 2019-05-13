@@ -16,7 +16,7 @@ $ sudo apt install python3-gpiozero
 
 Demarrage du programme :
 
-Telecharger le Repository avec : $ sudo git clone https://www.gitgub.com/leosamuel64/Maze\
+Telecharger le Repository avec : $ sudo git clone https://www.gitgub.com/leosamuel64/Maze \
 Acceder au dossier Letter_Detection et lancer le programme start.py avec : $ sudo python3 start.py
 
 ------------------------------------------------------------------------------------------------------------------------
