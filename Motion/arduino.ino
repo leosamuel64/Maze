@@ -1,3 +1,11 @@
+
+# ------------------------------------------
+#   Created on February 2019
+#   @authors: Leo SAMUEL && Laetitia GAZUI
+# ------------------------------------------
+
+# Biblio
+
 #include "SparkFunLSM6DS3.h"
 #include "Wire.h"
 #include "rgb_lcd.h"
@@ -434,6 +442,8 @@ int rX = digitalRead(51);
       rS = digitalRead(49);
       rX = digitalRead(51);
   }
+	
+	
     if(rU == 1){          // détection lettre U
       lcd.setRGB(0,255,0);
       lcd.print("victime indemne (U)");
@@ -479,7 +489,7 @@ int rX = digitalRead(51);
      }
 }
 
-//////////////////////// Fonction centrage ////////////////////////
+//////////////////////// Fonction centrage ////////////////////////   A travailler parce que marche pas (Attention au(x) capteur(s))
 
 /*void centrage() {
   disfl();
@@ -515,9 +525,9 @@ disfl();      // récup valeurs capteurs IR
 disfr();
 disbl();
 disbr();
-distance();
+distance();   // recup valeur US 
 delay(1000);
- if (dis_fl > 25 /*and dis_bl > 20*/) {    // détection passage à gauche
+ if (dis_fl > 25 and dis_bl > 20) {    // détection passage à gauche
    dep_left();
    delay(200);
    chauddroite();
@@ -531,7 +541,7 @@ delay(1000);
    chaudgauche();
    delay(1000);
  }
- else if (dis_br > 25 /*and dis_br > 20*/) {    // détection passage à droite
+ else if (dis_br > 25 and dis_br > 20) {    // détection passage à droite
    dep_right();
    delay(200);
    chauddroite();
@@ -555,16 +565,8 @@ delay(1000);
 
 void loop() {  //////////////////////////////////////////////////////////////////////////////////// void loop ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-larguage();
-delay(700);
- 
-
- /*navigation();
-
-
- /*receivelettre();
- delay(500);*/
+navigation(); // se deplace et interoge les capteurs de chaleurs IR
+receivelettre(); // Communication avec l'arduino
+delay(500);
 
 }
-
-  
