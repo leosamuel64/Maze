@@ -1,16 +1,17 @@
 
-# ------------------------------------------
-#   Created on February 2019
-#   @authors: Leo SAMUEL && Laetitia GAZUI
-# ------------------------------------------
+/* ------------------------------------------
+*   Created on February 2019
+*   @authors: Leo SAMUEL && Laetitia GAZUI
+*--------------------------------------------*/
 
-# Biblio
+// Biblio
 
-#include "SparkFunLSM6DS3.h"
-#include "Wire.h"
-#include "rgb_lcd.h"
+#include "SparkFunLSM6DS3.h"  	// à ajouter dans L'IDE
+#include "rgb_lcd.h"	      	// à ajouter dans L'IDE
+#include "Ultrasonic.h"		// à ajouter dans L'IDE
 #include <Servo.h>
-#include "Ultrasonic.h"
+#include "Wire.h"
+
 
 Ultrasonic ultrasonic(4);  // Création de l'objet pour le capteur ultrason
 
