@@ -1,3 +1,3 @@
-import o
+import os
 while 1==1:
 	b = os.system('sudo python3 detection.py')  ## lance le programme dans une boucle infinie...
